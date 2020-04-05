@@ -29,4 +29,4 @@ jobs:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
     
     - run: |
-        az webapp up --location southindia --name lifeonland
+        az webapp up --location southindia --name lifeonland --html
