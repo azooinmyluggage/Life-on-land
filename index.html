@@ -3,6 +3,112 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
+        
+        * {
+  box-sizing: border-box;
+}
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
         .container {
           position: relative;
           width: 50%;
@@ -48,13 +154,102 @@
     </head>
     <body>
         <h2>Life on Land</h2>
-<p>Extinct and Endangered Animals</p>
+<h3>Extinct and Endangered Animals</h3>
+<p>Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss
+</p>
 
-<div class="container">
+<div class="row">
+<div class="column, container">
   <img src="https://mk0mexiconewsdam2uje.kinstacdn.com/wp-content/uploads/2020/03/vaquita.jpg" alt="Avatar" class="image">
   <div class="overlay">
-    <div class="text">Vaquita</div>
+    <div class="text">Underwater</div>
   </div>
 </div>
+<div class="column, container">
+    <img src="https://lh3.googleusercontent.com/proxy/RMAI3XUuX8vWFcLxfke79Cpiuv3z9QDV-0avyD5lIbCWPvH0unlI8YDXt9CqYrU4MJgSUrkoJEktrjrvwW320WUGXD8US8LZUzval1BN6I8k6CVncfdvzfUTL7iHSxGJS9WgNcLYRzJMLINoL0EufYqn2bcOpBWWHp6DjJvmHA" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Cat</div>
+    </div>
+  </div>
+  <div class="column, container">
+
+    <img src="https://imgs.mongabay.com/wp-content/uploads/sites/20/2019/03/03054609/JavanRhino_Face-768x512.jpg" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text" onclick="location.href='largeanimals.html';" style="cursor:pointer;">Large animals</div>
+    </div>
+  </div>
+  <div class="column, container">
+    <img src="https://cdn.britannica.com/s:800x450,c:crop/35/22435-138-ED8A48D1/red-salamander-much-salamanders-family-skin-species.jpg" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Ambhibians</div>
+    </div>
+  </div>
+  <div class="column, container">
+    <img src="https://d1bv4heaa2n05k.cloudfront.net/user-images/1543501996711/shutterstock-549082930_main_1543502021955.jpeg" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Birds</div>
+    </div>
+  </div>
+  <div class="column, container">
+    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/portrait-of-a-giant-panda-eating-bamboo-royalty-free-image-1583635024.jpg" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Bears</div>
+    </div>
+  </div>
+  <div class="column, container">
+    <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mata-atlantica-atlantic-forest-in-brazil-royalty-free-image-935746242-1567619461.jpg" alt="Avatar" class="image">
+    <div class="overlay">
+      <div class="text">Forests</div>
+    </div>
+  </div>
+ 
+</div>
+
+<h2>How you can help</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/21X5lGlDOfg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h2>Meet the team</h2>
+<p>Meet the team behind this research
+</p>
+
+<div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="https://i.ytimg.com/vi/cSblrT8hBDc/maxresdefault.jpg" alt="Aggi" style="width:100%">
+        <div class="container">
+          <h2>Agastya B. Reddy</h2>
+          <p class="title">Student, SNIS</p>
+          <p>Free bird, general all time rowdy, smelly bum</p>
+          <p>aggi@snis.edu.in</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="https://i.pinimg.com/originals/65/93/19/65931900e41d9099d65df7c693de9cdc.jpg" alt="Yahvi" style="width:100%">
+        <div class="container">
+          <h2>Yahvi Malaviya</h2>
+          <p class="title">Student SNIS</p>
+          <p>Major lazer, foddie, home bird.</p>
+          <p>yahvi@snis.edu.in</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="https://media-exp1.licdn.com/dms/image/C5103AQH2aIaUfyRo8g/profile-displayphoto-shrink_200_200/0?e=1586390400&v=beta&t=4h5rZkp9lFmoiOzPpVkoDq6FGQYcQ0EawHBFgWf4JJQ" alt="Atul" style="width:100%">
+        <div class="container">
+          <h2>Atul Malaviya</h2>
+          <p class="title">Crime Master Gogo</p>
+          <p>Aaya hoon to kuch leke hi jaoonga.</p>
+          <p>atul@azooinmyluggage.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
